@@ -5,7 +5,6 @@
     <title>USERS</title>
 </head>
 <body>
-<a href="/edit"><i>Add User</i> ></a>
 <table>
         <tr>
             <th>First  Name</th>
@@ -19,9 +18,8 @@
         <td th:text ="${u.lastName}"></td>
         <td th:text ="${u.emailAddress}"></td>
         <td th:text ="${u.feedback}"></td>
-        <td> <a th: href="@{/edit/{id}/(id=${user.id})">EDIT</a> </td>
-        <td> <a th: href="@{/delete/{id}/(id=${user.id})">DELETE</a> </td>
-        </tr>
+        <td><a th:href="@{/edit/{id}(id=${u.id})}">EDIT</a></td>
+        <td><a th:href="@{/edit/{id}(id=${u.id})}">DELETE</a></td>
         </tbody>
     </table>
 </body>

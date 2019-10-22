@@ -5,27 +5,43 @@
     <title>ADD USER</title>
 </head>
 <body>
-<form action="/saveUser" method="post">
+<form action="/save" method="post">
     <table>
         <tr>
             <td>
-                <label for = "name"> Name :</label>
+                <label for="firstName">First Name:</label>
             </td>
             <td>
-                <input type="text" name= "name"></input>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <label for ="email" >Email :</label>
-            </td>
-            <td>
-                <input type="text" name= "email"></input>
+                <input type="text" id="firstName" name="firstName"/>
             </td>
         </tr>
         <tr>
             <td>
-                <input type="submit" value="submit">
+                <label for="lastName">Last Name:</label>
+            </td>
+            <td>
+                <input type="text" id="lastName" name="lastName"/>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="emailAddress">Email:</label>
+            </td>
+            <td>
+                <input type="text" id="emailAddress" name="emailAddress"/>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="feedback">Feedback:</label>
+            </td>
+            <td>
+                <input type="text" id="feedback" name="feedback"/>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="submit" value="submit"/>
             </td>
         </tr>
 
