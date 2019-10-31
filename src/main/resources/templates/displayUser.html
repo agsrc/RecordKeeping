@@ -19,7 +19,7 @@
         <td th:text ="${u.emailAddress}"></td>
         <td th:text ="${u.feedback}"></td>
         <td><a th:href="@{/edit/{id}(id=${u.id})}">EDIT</a></td>
-        <td><a th:href="@{/edit/{id}(id=${u.id})}">DELETE</a></td>
+        <td><a th:href="@{/delete/{id}(id=${u.id})}">DELETE</a></td>
         </tbody>
     </table>
 </body>

@@ -5,7 +5,7 @@
 </head>
 
 <body>
-<form action="#" th:action= "@{/createUser}", th:object="${user}", method="post">
+<form action="#" th:action= "@{/createUser}" th:object="${user}" method="post">
    <div>
        <label> First Name</label>
        <input type="text" th:field="*{firstName}"/>
@@ -21,6 +21,9 @@
     <div>
         <label> Feedback</label>
         <input type="text" th:field="*{feedback}"/>
+    </div>
+    <div>
+        <input type="hidden" th:field="*{id}" />
     </div>
     <div>
         Submit
