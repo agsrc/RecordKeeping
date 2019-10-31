@@ -21,7 +21,7 @@ public class UserController {
      @RequestMapping(path = "/createUser", method = RequestMethod.POST)
     public String createOrUpdate(User user){
         service.createOrUpdate(user);
-                return "/userDisplay";
+                return "redirect:/displayUser";
     }
     @RequestMapping(value = {"/edit","/edit/{id}"})
     public String getUserById(Model model, @PathVariable("id")Optional<Long> idop) throws Exception {
@@ -34,10 +34,10 @@ public class UserController {
         }
         return "add-edit";
     }
-    @RequestMapping("/delete/{id")
+    @RequestMapping("/delete/{id}")
     public String deleteById(@PathVariable Long id) throws Exception {
         service.deleteUserById(id);
-        return "add-edit";
+        return "redirect:/displayUser";
     }
 
 
