@@ -30,7 +30,9 @@ public class UserService {
     }
     //post and update
    public User createOrUpdate(User entity){
-        if(entity==null){
+//        long id = entity.getId();
+//        long s=null;
+        if(entity.getId() == null){
             entity = repository.save(entity);
             return entity;
         }
